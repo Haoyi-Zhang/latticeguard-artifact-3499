@@ -1,0 +1,304 @@
+{
+  "claims": [
+    {
+      "claim_id": "executed_real_adapters",
+      "paper_visibility": "paper_visible_verified",
+      "query": "distinct adapter_id where applicability_status=APPLICABLE_EVALUATED",
+      "value": 3
+    },
+    {
+      "claim_id": "executed_adapter_ids",
+      "paper_visibility": "paper_visible_verified",
+      "query": "distinct adapter_id list",
+      "value": "casbin_py;cedar_py;opa_rego_cli"
+    },
+    {
+      "claim_id": "primary_evaluated_obligations",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count obligations where applicability_status=APPLICABLE_EVALUATED",
+      "value": 15840
+    },
+    {
+      "claim_id": "primary_passes",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count evaluated obligations with oracle_status=PASS",
+      "value": 15840
+    },
+    {
+      "claim_id": "primary_real_failures",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count evaluated obligations with oracle_status=FAIL",
+      "value": 0
+    },
+    {
+      "claim_id": "primary_errors",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count evaluated obligations with oracle_status=ERROR_RECORDED",
+      "value": 0
+    },
+    {
+      "claim_id": "rejected_invalid_transformations",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count obligations where applicability_status=REJECTED_NOT_COUNTED",
+      "value": 3240
+    },
+    {
+      "claim_id": "unsupported_transformations",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count obligations where applicability_status=UNSUPPORTED_NOT_COUNTED",
+      "value": 360
+    },
+    {
+      "claim_id": "relation_ids_covered",
+      "paper_visibility": "paper_visible_verified",
+      "query": "distinct relation_id in evaluated obligations",
+      "value": 12
+    },
+    {
+      "claim_id": "source_ids_covered",
+      "paper_visibility": "paper_visible_verified",
+      "query": "distinct source_id in evaluated obligations",
+      "value": 120
+    },
+    {
+      "claim_id": "seeded_mutant_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count baseline SEEDED_MUTANT_POSITIVE_CONTROL rows",
+      "value": 36960
+    },
+    {
+      "claim_id": "seeded_mutants_killed",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count seeded mutant rows with killed=true",
+      "value": 5040
+    },
+    {
+      "claim_id": "minimized_counterexamples",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count counterexamples",
+      "value": 5040
+    },
+    {
+      "claim_id": "scalability_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count scalability rows",
+      "value": 84
+    },
+    {
+      "claim_id": "cross_adapter_differential_summary",
+      "paper_visibility": "paper_visible_verified",
+      "query": "CROSS_ADAPTER_DIFFERENTIAL_ONLY oracle_status",
+      "value": "discrepancies=0/comparable=5280"
+    },
+    {
+      "claim_id": "bounded_model_checked_cases",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count bounded core model-check cases",
+      "value": 74024
+    },
+    {
+      "claim_id": "bounded_model_check_failures",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count bounded core model-check failures",
+      "value": 0
+    },
+    {
+      "claim_id": "bounded_model_relations",
+      "paper_visibility": "paper_visible_verified",
+      "query": "relations covered by bounded core model checker",
+      "value": 12
+    },
+    {
+      "claim_id": "native_selftest_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count native fixture selftest rows",
+      "value": 451
+    },
+    {
+      "claim_id": "native_selftest_passes",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count native fixture selftest passes",
+      "value": 451
+    },
+    {
+      "claim_id": "native_selftest_failures",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count native fixture selftest non-passes",
+      "value": 0
+    },
+    {
+      "claim_id": "predicate_witnesses",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count generated candidate predicate witness rows",
+      "value": 6480
+    },
+    {
+      "claim_id": "aggregate_checks",
+      "paper_visibility": "paper_visible_verified",
+      "query": "scripts/verify_all.py aggregate check count",
+      "value": 129
+    },
+    {
+      "claim_id": "adapter_reference_agreement_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count applicable adapter/reference decision agreement rows",
+      "value": 15840
+    },
+    {
+      "claim_id": "adapter_reference_agreement_failures",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count adapter/reference decision agreement failures",
+      "value": 0
+    },
+    {
+      "claim_id": "reference_integrity_entries",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count cited bibliography entries passing local reference-integrity gate",
+      "value": 73
+    },
+    {
+      "claim_id": "official_documentation_sources",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count documentation-derived subject sources in source provenance gate",
+      "value": 6
+    },
+    {
+      "claim_id": "upstream_example_sources",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count upstream example subject sources in source provenance gate",
+      "value": 7
+    },
+    {
+      "claim_id": "native_canonical_sources",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count native canonical subject sources in source provenance gate",
+      "value": 10
+    },
+    {
+      "claim_id": "semantic_stress_witness_sources",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count semantic stress witness sources in source provenance gate",
+      "value": 96
+    },
+    {
+      "claim_id": "generated_sources",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count generated subject sources in source provenance gate",
+      "value": 1
+    },
+    {
+      "claim_id": "deployed_tool_crosswalk_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count deployed testing idioms compared against the law-level oracle",
+      "value": 8
+    },
+    {
+      "claim_id": "deployed_tool_native_selftests",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count native deployed-style self-tests in crosswalk evidence",
+      "value": 451
+    },
+    {
+      "claim_id": "deployed_tool_cross_adapter_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count comparable cross-adapter decision rows in deployed-tool crosswalk",
+      "value": 5280
+    },
+    {
+      "claim_id": "deployed_head_to_head_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count empirical same-stream deployed-tool head-to-head comparison rows",
+      "value": 6
+    },
+    {
+      "claim_id": "seeded_point_mismatch_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count seeded same-stream point-check decision mismatches",
+      "value": 13320
+    },
+    {
+      "claim_id": "seeded_head_to_head_overlap_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count seeded rows detected by both point checks and the law oracle",
+      "value": 5040
+    },
+    {
+      "claim_id": "native_adapter_count",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count native adapters distinct from normalized decision harnesses",
+      "value": 2
+    },
+    {
+      "claim_id": "decision_harness_count",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count normalized decision harnesses with supplied closure",
+      "value": 1
+    },
+    {
+      "claim_id": "validity_challenge_checks",
+      "paper_visibility": "artifact_visible_verified",
+      "query": "count validity challenge checks",
+      "value": 7
+    },
+    {
+      "claim_id": "opa_normalized_decision_rows",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count OPA/Rego normalized decision rows under explicit boundary",
+      "value": 5280
+    },
+    {
+      "claim_id": "holdout_evaluated_obligations",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count outcome-independent holdout obligations",
+      "value": 5148
+    },
+    {
+      "claim_id": "validity_boundary_checks",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count validity-boundary checks over denominator, fragment, holdout, and seeded controls",
+      "value": 14
+    },
+    {
+      "claim_id": "seeded_kill_rate_percent",
+      "paper_visibility": "paper_visible_verified",
+      "query": "compute seeded positive-control kill rate over frozen mutant rows",
+      "value": "13.64"
+    },
+    {
+      "claim_id": "all_candidates_as_denominator_pass_rate",
+      "paper_visibility": "paper_visible_verified",
+      "query": "compute conservative pass rate when rejected and unsupported candidates are counted against the run",
+      "value": "81.48"
+    },
+    {
+      "claim_id": "mechanized_kernel_cases",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count independent mechanized law-kernel replay cases",
+      "value": 432
+    },
+    {
+      "claim_id": "mechanized_kernel_failures",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count independent mechanized law-kernel replay failures",
+      "value": 0
+    },
+    {
+      "claim_id": "baseline_families",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count baseline families in oracle efficacy summary",
+      "value": 9
+    },
+    {
+      "claim_id": "quality_gate_lenses",
+      "paper_visibility": "paper_visible_verified",
+      "query": "count research-quality gate lenses",
+      "value": 20
+    },
+    {
+      "claim_id": "protocol_freeze_checks",
+      "paper_visibility": "artifact_visible_verified",
+      "query": "count protocol-freeze checks over relation contracts, predicates, exclusions, holdout, and deployed-tool crosswalk",
+      "value": 11
+    }
+  ]
+}

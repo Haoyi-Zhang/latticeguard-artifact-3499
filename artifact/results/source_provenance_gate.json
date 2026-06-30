@@ -1,0 +1,12 @@
+{
+  "audited_subject_sources": 120,
+  "claim_safety": "report total as frozen subject sources; separately label documentation/upstream/native/stress/generated strata",
+  "errors": [],
+  "generated_sources": 1,
+  "native_canonical_sources": 10,
+  "official_documentation_sources": 6,
+  "raw_native_fixture_bundles": 113,
+  "semantic_stress_witness_sources": 96,
+  "status": "PASS",
+  "upstream_example_sources": 7
+}

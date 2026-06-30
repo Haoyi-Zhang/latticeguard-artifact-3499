@@ -1,0 +1,19 @@
+{
+  "checks": 7,
+  "failed_checks": [],
+  "failures": 0,
+  "holdout_adapter_count": 3,
+  "holdout_evaluated_obligations": 5148,
+  "holdout_relation_count": 12,
+  "holdout_sources": 39,
+  "native_selftest_rows": 451,
+  "opa_hierarchy_boundary_rows": 1080,
+  "opa_native_closure_claimed": false,
+  "opa_normalized_decision_rows": 5280,
+  "raw_native_fixture_bundles": 113,
+  "rejected_and_unsupported_as_failure_pass_rate": "81.48",
+  "status": "PASS",
+  "stress_witness_sources": 96,
+  "unsupported_as_failure_pass_rate": "97.78",
+  "upstream_audit_rows": 113
+}

@@ -1,0 +1,2 @@
+source_id,before_version,after_version,public_url,license,status,counted_real_drift_witness,note
+none_counted,,,,,NO_PUBLIC_RELEASE_PAIR_SEED_PROVIDED,false,"Harness requires public before/after fixture, license, and replay material before a real drift claim may be counted."

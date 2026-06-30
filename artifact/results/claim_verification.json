@@ -1,0 +1,37 @@
+{
+  "adapter_reference_agreement_rows": 15840,
+  "applicable_primary_obligations": 15840,
+  "errors": [],
+  "excluded_primary_adapters": [],
+  "executed_primary_adapters": [
+    "casbin_py",
+    "cedar_py",
+    "opa_rego_cli"
+  ],
+  "primary_failures": 0,
+  "primary_passes": 15840,
+  "proof_obligations": 48,
+  "reference_integrity_entries": 73,
+  "rejected_invalid_transformations": 3240,
+  "relation_ids": [
+    "DD",
+    "DO",
+    "PA",
+    "DA",
+    "IE",
+    "ID",
+    "HC",
+    "HR",
+    "SR",
+    "RO",
+    "AR",
+    "SM"
+  ],
+  "research_questions": 5,
+  "seeded_counterexamples": 5040,
+  "seeded_mutant_rows": 36960,
+  "seeded_mutants_killed": 5040,
+  "status": "PASS",
+  "theorem_rows": 12,
+  "unsupported_not_counted": 360
+}

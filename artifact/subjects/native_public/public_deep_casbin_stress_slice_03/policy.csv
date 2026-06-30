@@ -1,0 +1,6 @@
+p, suspended, repo:public, read, allow
+p, suspended, repo:public, read, deny
+g, cleo, suspended
+p, shadow_role, repo:reports, read, allow
+p, shadow_role, repo:reports, read, deny
+g, erin, shadow_role

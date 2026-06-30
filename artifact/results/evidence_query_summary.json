@@ -1,0 +1,36 @@
+{
+  "adapters": [
+    "casbin_py",
+    "cedar_py",
+    "opa_rego_cli"
+  ],
+  "benchmark_sources": 346,
+  "evaluated_obligations": 15840,
+  "failures": 0,
+  "model_check_cases": 74024,
+  "model_check_failures": 0,
+  "native_benchmark_sources": 113,
+  "native_selftest_failures": 0,
+  "native_selftests": 451,
+  "passes": 15840,
+  "predicate_rows": 6480,
+  "rejected": 3240,
+  "relations": [
+    "AR",
+    "DA",
+    "DD",
+    "DO",
+    "HC",
+    "HR",
+    "ID",
+    "IE",
+    "PA",
+    "RO",
+    "SM",
+    "SR"
+  ],
+  "soundness_failures": 0,
+  "soundness_rows": 6480,
+  "sources": 120,
+  "unsupported": 360
+}

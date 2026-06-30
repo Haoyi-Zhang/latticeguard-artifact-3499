@@ -1,0 +1,19 @@
+{
+  "audit_claim": "The deployed-tool comparison is empirical: point-test and differential idioms are evaluated over the same frozen streams as the law oracle, while OPA is reported as a normalized decision harness rather than a native hierarchy adapter.",
+  "cross_adapter_comparable_rows": 5280,
+  "cross_adapter_discrepancies": 0,
+  "decision_harness_count": 1,
+  "missing_reference_rows": 0,
+  "native_adapter_count": 2,
+  "opa_role": "normalized_decision_harness_with_supplied_closure",
+  "primary_head_to_head_failures": 0,
+  "primary_head_to_head_stream_rows": 15840,
+  "rows": 6,
+  "seeded_head_to_head_stream_rows": 36960,
+  "seeded_law_kill_rows": 5040,
+  "seeded_law_only_rows": 0,
+  "seeded_overlap_rows": 5040,
+  "seeded_point_mismatch_rows": 13320,
+  "seeded_point_only_rows": 8280,
+  "status": "PASS"
+}

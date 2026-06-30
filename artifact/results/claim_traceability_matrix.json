@@ -1,0 +1,8 @@
+{
+  "errors": [],
+  "manifest_claims": 50,
+  "missing_paper_claim_rows_for_known_claims": [],
+  "paper_visible_claims_traced": 45,
+  "status": "PASS",
+  "trace_failures": 0
+}

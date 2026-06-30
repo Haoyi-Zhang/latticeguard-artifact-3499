@@ -1,0 +1,5 @@
+impact_claim,why_the_claim_matters,evidence,paper_section
+Makes invalid policy transformations visible instead of silently counting them.,Unsound metamorphic relations can create false confidence; denominator safety is the core methodological contribution.,3240 rejected invalid transformations; predicate witness ledger,Semantic Model; Evaluation RQ1
+Turns authorization-law intuition into replayable regression obligations.,Maintainers can test refactorings and evaluator upgrades without hand-authoring a decision table for every request.,15840 applicable obligations over 12 relation families,Obligation Generation; Evaluation
+Separates semantic failure sensitivity from vulnerability or bug claims.,Positive controls demonstrate the oracle path without inflating empirical claims.,5040 killed seeded rows and 5040 minimized counterexamples,RQ3; Ablations and Baselines
+Connects formal law soundness to executable adapters.,The result is neither paper-only theory nor tool-only engineering; the same law object is checked by model and adapter replay.,74024 model cases plus adapter obligations,Semantic Model; Implementation

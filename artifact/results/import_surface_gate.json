@@ -1,0 +1,14 @@
+{
+  "declared_vendor_import_roots": [
+    "bracex",
+    "casbin",
+    "cedarpy",
+    "pypdf",
+    "simpleeval",
+    "wcmatch"
+  ],
+  "import_rows": 822,
+  "scanned_python_files": 181,
+  "status": "PASS",
+  "undeclared_external_imports": []
+}

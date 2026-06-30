@@ -1,0 +1,7 @@
+dependency,pinned_version,metadata_name,metadata_version,license_field,import_name,import_resolved_to_vendor,metadata_path,status
+bracex,2.6,bracex,2.6,MIT,bracex,true,vendor_python/bracex-2.6.dist-info/METADATA,PASS
+cedarpy,4.8.3,cedarpy,4.8.3,Apache-2.0,cedarpy,true,vendor_python/cedarpy-4.8.3.dist-info/METADATA,PASS
+pycasbin,2.8.0,pycasbin,2.8.0,Apache 2.0,casbin,true,vendor_python/pycasbin-2.8.0.dist-info/METADATA,PASS
+pypdf,5.9.0,pypdf,5.9.0,BSD-3-Clause,pypdf,true,vendor_python/pypdf-5.9.0.dist-info/METADATA,PASS
+simpleeval,1.0.7,simpleeval,1.0.7,MIT,simpleeval,true,vendor_python/simpleeval-1.0.7.dist-info/METADATA,PASS
+wcmatch,10.1,wcmatch,10.1,MIT,wcmatch,true,vendor_python/wcmatch-10.1.dist-info/METADATA,PASS

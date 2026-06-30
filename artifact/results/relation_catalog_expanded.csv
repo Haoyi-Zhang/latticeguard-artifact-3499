@@ -1,0 +1,13 @@
+relation_id,name,predicate_summary,invariant_summary
+DD,Default deny,no reachable allow or deny,before=DENY and after=DENY
+DO,Deny dominance,matching allow plus added matching deny,before=ALLOW and after=DENY
+PA,Deny-aware principal monotonicity,role closure superset and no newly matching deny,ALLOW preserved
+DA,Deny antitonicity,deny witness remains reachable,DENY preserved
+IE,Irrelevant extension,new material outside request-reachable slice,decision unchanged
+ID,Idempotence,duplicate semantic rule,decision unchanged
+HC,Hierarchy closure,added edge already implied by transitive closure,decision unchanged
+HR,Hierarchy refactoring,child role inherits original role and assignment is rewritten consistently,decision unchanged
+SR,Shadowed rule removal,removed allow is shadowed by matching deny,DENY preserved
+RO,Rule-order invariance,same unordered rule multiset and no priority/first/last-match fragment,decision unchanged
+AR,Alpha renaming,injective renaming outside requested principal/resource/action slice,decision unchanged
+SM,Scope split/merge,disjoint scope rewrite preserves target permission,decision unchanged

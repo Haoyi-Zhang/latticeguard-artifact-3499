@@ -1,0 +1,11 @@
+{
+  "applicable_primary_obligations": 15840,
+  "audit_claim": "Full law-level oracle combines denominator safety, seeded drift sensitivity, and semantic counterexample replay; weaker baselines lack at least one of these three properties.",
+  "baseline_families": 9,
+  "full_oracle_seeded_killed": 5040,
+  "invalid_transformations_rejected": 3240,
+  "relation_kill_families": 4,
+  "semantic_counterexamples_replayed": 5040,
+  "status": "PASS",
+  "strongest_non_full_detection": 5040
+}

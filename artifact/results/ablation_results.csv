@@ -1,0 +1,20 @@
+ablation_id,candidate_count,evaluated_obligation_count,invalid_rows_admitted,finding
+remove_applicability_predicates,6480,15840,1200,would admit invalid transformations; primary keeps them out of pass denominator
+remove_invalid_transformation_rejection,6480,15840,1200,negative controls become false obligations if rejection ledger is disabled
+remove_counterexample_minimization,15840,15840,0,no primary real-adapter counterexamples required minimization; seeded mutants still use replay material
+public_subjects_only,5236,15708,0,public-transcribed subject slice exercises all 12 relations over the executed real adapters
+generated_law_probes_only,44,132,0,generated canonical seed exercises all 12 relations over the executed real adapters
+without_cross_adapter_recheck,15840,15840,0,removes adapter-pair discrepancy evidence but leaves per-adapter law oracles intact
+without_hierarchy_refactoring_relations,3840,11520,0,drops role-order/refactoring law coverage
+single_relation_DD,480,1440,0,relation-isolation row for contribution analysis
+single_relation_DO,480,1440,0,relation-isolation row for contribution analysis
+single_relation_PA,360,1080,0,relation-isolation row for contribution analysis
+single_relation_DA,360,1080,0,relation-isolation row for contribution analysis
+single_relation_IE,600,1800,0,relation-isolation row for contribution analysis
+single_relation_ID,600,1800,0,relation-isolation row for contribution analysis
+single_relation_HC,360,1080,0,relation-isolation row for contribution analysis
+single_relation_HR,360,1080,0,relation-isolation row for contribution analysis
+single_relation_SR,240,720,0,relation-isolation row for contribution analysis
+single_relation_RO,600,1800,0,relation-isolation row for contribution analysis
+single_relation_AR,480,1440,0,relation-isolation row for contribution analysis
+single_relation_SM,360,1080,0,relation-isolation row for contribution analysis

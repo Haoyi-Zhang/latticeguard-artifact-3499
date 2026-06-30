@@ -1,0 +1,3 @@
+p, suspended, repo:public, read, allow
+p, suspended, repo:public, read, deny
+g, mona, suspended

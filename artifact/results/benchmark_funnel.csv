@@ -1,0 +1,347 @@
+source_id,kind,license,hash_present,included,reason
+public_deep_casbin_stress_slice_01_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_01_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_02_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_02_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_03_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_03_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_04_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_04_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_05_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_05_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_06_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_06_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_07_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_07_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_08_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_08_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_09_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_09_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_10_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_10_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_11_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_11_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_12_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_12_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_13_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_13_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_14_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_14_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_15_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_15_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_16_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_16_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_17_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_17_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_18_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_18_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_19_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_19_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_20_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_20_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_21_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_21_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_22_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_22_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_23_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_23_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_24_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_24_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_25_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_25_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_26_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_26_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_27_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_27_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_28_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_28_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_29_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_29_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_30_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_30_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_31_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_31_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_32_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_32_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_33_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_33_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_34_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_34_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_35_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_35_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_36_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_36_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_37_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_37_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_38_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_38_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_01_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_01_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_02_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_02_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_03_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_03_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_04_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_04_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_05_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_05_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_06_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_06_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_07_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_07_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_08_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_08_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_09_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_09_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_10_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_10_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_11_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_11_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_12_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_12_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_13_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_13_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_14_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_14_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_15_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_15_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_16_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_16_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_17_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_17_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_18_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_18_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_19_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_19_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_20_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_20_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_21_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_21_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_22_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_22_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_23_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_23_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_24_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_24_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_25_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_25_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_26_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_26_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_27_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_27_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_28_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_28_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_29_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_29_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_30_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_30_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_31_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_31_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_32_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_32_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_33_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_33_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_34_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_34_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_35_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_35_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_36_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_36_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_37_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_37_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_38_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_38_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_01_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_01_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_02_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_02_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_03_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_03_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_04_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_04_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_05_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_05_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_06_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_06_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_07_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_07_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_08_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_08_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_09_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_09_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_10_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_10_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_01_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_01_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_02_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_02_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_03_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_03_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_04_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_04_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_05_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_05_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_06_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_06_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_07_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_07_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_08_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_08_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_09_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_09_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_10_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_10_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_acl_deny_override_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_acl_deny_override_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_default_deny_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_default_deny_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_rbac_hierarchy_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_rbac_hierarchy_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_scope_split_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_scope_split_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_shadowed_deny_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_shadowed_deny_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_default_deny_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_default_deny_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_hierarchy_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_hierarchy_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_rbac_forbid_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_rbac_forbid_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_scope_split_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_scope_split_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_shadowed_rule_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_shadowed_rule_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_basic_acl_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_basic_acl_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_domain_rbac_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_domain_rbac_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_priority_fragment_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_priority_fragment_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_rbac_example_model.conf,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_rbac_example_policy.csv,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_cedar_default_deny_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_cedar_default_deny_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_cedar_forbid_precedence_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_cedar_forbid_precedence_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_cedar_integration_1a_entities.json,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_cedar_integration_1a_policy.cedar,native_public_fixture,Apache-2.0,true,true,public/offline deterministic source with license/hash/provenance
+generated_latticeguard_canonical_law_probe,subject_seed,Apache-2.0 or official documentation license as recorded in source_manifest/external_resources; fixture is a deterministic executable slice transcribed from public examples before the locked evaluation run,true,true,public/offline deterministic source with license/hash/provenance
+public_casbin_core_rbac_model_example_slice,subject_seed,Apache-2.0 or official documentation license as recorded in source_manifest/external_resources; fixture is a deterministic executable slice transcribed from public examples before the locked evaluation run,true,true,public/offline deterministic source with license/hash/provenance
+public_casbin_docs_deny_override_slice,subject_seed,Apache-2.0 or official documentation license as recorded in source_manifest/external_resources; fixture is a deterministic executable slice transcribed from public examples before the locked evaluation run,true,true,public/offline deterministic source with license/hash/provenance
+public_casbin_pyc_repo_acl_example_slice,subject_seed,Apache-2.0 or official documentation license as recorded in source_manifest/external_resources; fixture is a deterministic executable slice transcribed from public examples before the locked evaluation run,true,true,public/offline deterministic source with license/hash/provenance
+public_cedar_docs_authz_algorithm_slice,subject_seed,Apache-2.0 or official documentation license as recorded in source_manifest/external_resources; fixture is a deterministic executable slice transcribed from public examples before the locked evaluation run,true,true,public/offline deterministic source with license/hash/provenance
+public_cedar_policy_examples_forbid_slice,subject_seed,Apache-2.0 or official documentation license as recorded in source_manifest/external_resources; fixture is a deterministic executable slice transcribed from public examples before the locked evaluation run,true,true,public/offline deterministic source with license/hash/provenance
+public_cedar_policy_examples_group_slice,subject_seed,Apache-2.0 or official documentation license as recorded in source_manifest/external_resources; fixture is a deterministic executable slice transcribed from public examples before the locked evaluation run,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_01,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_02,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_03,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_04,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_05,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_06,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_07,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_08,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_09,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_10,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_11,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_12,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_13,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_14,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_15,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_16,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_17,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_18,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_19,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_20,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_21,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_22,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_23,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_24,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_25,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_26,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_27,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_28,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_29,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_30,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_31,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_32,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_33,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_34,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_35,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_36,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_37,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_casbin_stress_slice_38,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_01,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_02,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_03,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_04,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_05,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_06,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_07,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_08,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_09,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_10,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_11,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_12,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_13,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_14,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_15,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_16,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_17,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_18,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_19,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_20,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_21,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_22,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_23,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_24,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_25,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_26,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_27,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_28,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_29,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_30,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_31,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_32,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_33,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_34,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_35,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_36,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_37,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_deep_cedar_stress_slice_38,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_01,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_02,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_03,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_04,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_05,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_06,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_07,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_08,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_09,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_casbin_semantic_slice_10,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_01,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_02,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_03,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_04,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_05,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_06,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_07,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_08,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_09,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_matrix_cedar_semantic_slice_10,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_acl_deny_override,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_default_deny,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_rbac_hierarchy,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_scope_split,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_casbin_shadowed_deny,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_default_deny,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_hierarchy,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_rbac_forbid,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_scope_split,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_native_cedar_shadowed_rule,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_basic_acl,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_domain_rbac,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_priority_fragment,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_casbin_rbac_example,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_cedar_default_deny,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_cedar_forbid_precedence,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance
+public_upstream_cedar_integration_1a,subject_seed,Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv,true,true,public/offline deterministic source with license/hash/provenance

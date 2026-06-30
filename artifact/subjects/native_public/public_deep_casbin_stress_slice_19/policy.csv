@@ -1,0 +1,4 @@
+p, outsider, repo:archive, read, allow
+p, shadow_role, repo:reports, read, allow
+p, shadow_role, repo:reports, read, deny
+g, erin, shadow_role

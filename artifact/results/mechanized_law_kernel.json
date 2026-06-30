@@ -1,0 +1,27 @@
+{
+  "cases_by_relation": {
+    "AR": 36,
+    "DA": 36,
+    "DD": 36,
+    "DO": 36,
+    "HC": 36,
+    "HR": 36,
+    "ID": 36,
+    "IE": 36,
+    "PA": 36,
+    "RO": 36,
+    "SM": 36,
+    "SR": 36
+  },
+  "cases_checked": 432,
+  "certificate_kind": "independent_mechanized_law_kernel_replay",
+  "failure_case_ids": [],
+  "failures": 0,
+  "relations_covered": 12,
+  "relations_expected": 12,
+  "row_digest": "3650e411f4e9dc8653bd84c423bbf1bb8b5af4d47e508ea207ad3e3ef06830da",
+  "semantics": "finite exact deny-overrides/default-deny core independent of external adapters",
+  "status": "PASS",
+  "theorem_names_digest": "806c3d29c128c60bb1c273fad0e98e7025ae0d530570458f76f785b6dc09feab",
+  "theorems_checked": 12
+}

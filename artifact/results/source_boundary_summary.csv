@@ -1,0 +1,7 @@
+stratum,source_count,holdout_sources,evaluated_obligations,paper_interpretation,claim_safety_rule
+official_documentation_slice,6,0,0,Normalized slices transcribed from official Casbin/Cedar documentation pages.,May be described as documentation-derived public semantics; not a broad upstream benchmark.
+upstream_example_slice,7,0,0,Canonicalized public example/test slices from upstream project material.,May be described as upstream example coverage only with hash/provenance retained.
+native_canonical_slice,10,0,0,Canonical law objects translated from raw native fixture bundles after native self-tests.,May be counted as native fixture imports only when raw hash and self-test linkage exist.
+semantic_stress_witness,96,0,0,Deterministic stress witnesses derived from the frozen law catalog to exercise relation combinations.,"Must be reported as stress witnesses, not as independent upstream/public benchmark cases."
+generated_canonical_probe,1,0,0,Single generated canonical law probe used to keep the generated stratum explicit.,Must remain separately labeled as generated.
+unclassified,0,0,0,Unknown source-id pattern.,Gate failure unless empty.

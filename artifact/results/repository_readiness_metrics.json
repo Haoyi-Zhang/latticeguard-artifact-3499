@@ -1,0 +1,63 @@
+{
+  "blockers": [],
+  "dimensions": [
+    {
+      "evidence": "results/summary.json",
+      "explanation": "15840 applicable primary obligations; failures=0; errors=0",
+      "name": "replay",
+      "score": 100,
+      "weight": 18
+    },
+    {
+      "evidence": "results/predicate_evaluations.csv",
+      "explanation": "6480 predicate rows and 6480 reference-soundness rows",
+      "name": "applicability_predicates",
+      "score": 100,
+      "weight": 16
+    },
+    {
+      "evidence": "results/upstream_benchmark_audit.csv",
+      "explanation": "120 sources; 451 native selftest rows; 113 audited native bundles",
+      "name": "benchmark_provenance",
+      "score": 100,
+      "weight": 16
+    },
+    {
+      "evidence": "results/model_check_summary.json",
+      "explanation": "74024 bounded semantic cases; failures=0; relations=12",
+      "name": "formal_core",
+      "score": 100,
+      "weight": 14
+    },
+    {
+      "evidence": "results/counterexamples.json",
+      "explanation": "5040 minimized seeded counterexamples; 14 family-matrix rows",
+      "name": "counterexample_replay",
+      "score": 100,
+      "weight": 12
+    },
+    {
+      "evidence": "results/repository_scorecard.json",
+      "explanation": "scorecard=PASS; blockers=0",
+      "name": "hygiene",
+      "score": 100,
+      "weight": 10
+    },
+    {
+      "evidence": "results/github_sync_manifest.csv",
+      "explanation": "829 repository paths classified for GitHub synchronization",
+      "name": "github_sync_manifest",
+      "score": 75,
+      "weight": 6
+    },
+    {
+      "evidence": "results/audit_objection_matrix.csv",
+      "explanation": "7 audit objections mapped to evidence files",
+      "name": "audit_attack_surface",
+      "score": 100,
+      "weight": 8
+    }
+  ],
+  "recommendation": "repository-ready-under-current-evidence-scope",
+  "weighted_score": 98.5
+}

@@ -1,0 +1,29 @@
+{
+  "gate": "quality_lens_score",
+  "grade": "A",
+  "metrics": {
+    "adapter_ids": [
+      "casbin_py",
+      "cedar_py",
+      "opa_rego_cli"
+    ],
+    "adapters": 3,
+    "bounded_model_cases": 74024,
+    "counterexamples": 5040,
+    "obligation_density": 4.5,
+    "obligations": 19440,
+    "predicate_rows": 6480,
+    "relations": 12,
+    "repository_quality_thresholds": {
+      "density>=1.0": true,
+      "model_cases>=70000": true,
+      "obligations>=1000": true,
+      "predicate_rows>=700": true
+    },
+    "sources": 120,
+    "status": "PASS"
+  },
+  "notes": [],
+  "score": 100,
+  "status": "PASS"
+}

@@ -1,0 +1,3 @@
+p, editor, repo:public, read, allow
+p, suspended, repo:public, read, deny
+g, emma, editor

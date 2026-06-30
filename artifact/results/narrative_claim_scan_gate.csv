@@ -1,0 +1,14 @@
+path,claim,expected,observed,line,status
+artifact/README.md,readme_quality_lenses,20,20,55,PASS
+artifact/README.md,readme_aggregate_checks,129,129,57,PASS
+artifact/README.md,readme_unit_tests,38,38,57,PASS
+artifact/README.md,readme_resource_rows,27,27,57,PASS
+artifact/reproduction.md,reproduction_quality_lenses,20,20,66,PASS
+artifact/reproduction.md,reproduction_aggregate_checks,129,129,66,PASS
+artifact/reproduction.md,reproduction_unit_tests,38,38,66,PASS
+artifact/reproduction.md,reproduction_reproducibility_risks,21,21,66,PASS
+artifact/reproduction.md,reproduction_dependency_rows,6,6,66,PASS
+artifact/reproduction.md,reproduction_denominator_checks,14,14,66,PASS
+artifact/reproduction.md,reproduction_resource_rows,27,27,66,PASS
+artifact/reproduction.md,reproduction_module_import_files,181,181,66,PASS
+artifact/reproduction.md,reproduction_import_surface_files,181,181,66,PASS

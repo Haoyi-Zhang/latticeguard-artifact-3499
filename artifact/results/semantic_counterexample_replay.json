@@ -1,0 +1,23 @@
+{
+  "adapters": {
+    "casbin_py_mutant_allow_overrides": 720,
+    "casbin_py_mutant_no_hierarchy": 960,
+    "casbin_py_mutant_strip_allows": 480,
+    "casbin_py_mutant_strip_denies": 720,
+    "cedar_py_mutant_ignore_forbid": 720,
+    "cedar_py_mutant_no_hierarchy": 960,
+    "cedar_py_mutant_strip_permits": 480
+  },
+  "counterexamples_semantically_replayed": 5040,
+  "csv": "results/semantic_counterexample_replay.csv",
+  "digest": "7492b736778c757b4925ff36cfe0bc2e55fbd3a78cbf0f56b252201b772bd260",
+  "errors": [],
+  "relations": {
+    "DO": 2880,
+    "HR": 720,
+    "PA": 720,
+    "SR": 720
+  },
+  "semantic_replay_failures": 0,
+  "status": "PASS"
+}

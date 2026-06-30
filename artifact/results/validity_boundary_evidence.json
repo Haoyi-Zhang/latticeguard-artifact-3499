@@ -1,0 +1,21 @@
+{
+  "all_candidates_as_denominator_pass_rate": "81.48",
+  "checks": 14,
+  "failure_ids": [],
+  "failures": 0,
+  "generated_candidates": 19440,
+  "holdout_evaluated_obligations": 5148,
+  "interpretation": "Primary zero-failure evidence is bounded by explicit denominator accounting, normalized-fragment scope, holdout replay, and seeded positive controls.",
+  "opa_native_closure_claimed": false,
+  "opa_normalized_decision_rows": 5280,
+  "primary_evaluated_obligations": 15840,
+  "primary_pass_rate": "100.00",
+  "rejected_invalid_transformations": 3240,
+  "seeded_kill_rate_percent": "13.64",
+  "seeded_killed_operators": "allow_overrides;ignore_forbid;no_hierarchy;strip_allows;strip_denies;strip_permits",
+  "seeded_killed_relations": "DO;HR;PA;SR",
+  "seeded_killed_rows": 5040,
+  "seeded_rows": 36960,
+  "status": "PASS",
+  "unsupported_transformations": 360
+}

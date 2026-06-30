@@ -1,0 +1,68 @@
+[
+  {
+    "attrs": {},
+    "parents": [
+      {
+        "id": "viewer",
+        "type": "Role"
+      }
+    ],
+    "uid": {
+      "id": "erin",
+      "type": "User"
+    }
+  },
+  {
+    "attrs": {},
+    "parents": [
+      {
+        "id": "suspended",
+        "type": "Role"
+      }
+    ],
+    "uid": {
+      "id": "mallory",
+      "type": "User"
+    }
+  },
+  {
+    "attrs": {},
+    "parents": [],
+    "uid": {
+      "id": "viewer",
+      "type": "Role"
+    }
+  },
+  {
+    "attrs": {},
+    "parents": [],
+    "uid": {
+      "id": "suspended",
+      "type": "Role"
+    }
+  },
+  {
+    "attrs": {},
+    "parents": [],
+    "uid": {
+      "id": "RepoPublic",
+      "type": "Repo"
+    }
+  },
+  {
+    "attrs": {},
+    "parents": [],
+    "uid": {
+      "id": "Archive",
+      "type": "Repo"
+    }
+  },
+  {
+    "attrs": {},
+    "parents": [],
+    "uid": {
+      "id": "Reports",
+      "type": "Repo"
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "errors": {
+    "baseline": [],
+    "coverage": [],
+    "denominator": [],
+    "predicate_soundness": []
+  },
+  "sections": {
+    "baseline": 0,
+    "coverage": 0,
+    "denominator": 0,
+    "predicate_soundness": 0
+  },
+  "status": "PASS"
+}

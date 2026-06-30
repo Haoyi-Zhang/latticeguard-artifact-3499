@@ -1,0 +1,12 @@
+check_id,rule,observed,status
+PF_001,relation contracts are explicit and complete before execution,contracts=12,PASS
+PF_002,predicate witness ledger covers all candidate ids,predicates=6480 obligations=6480,PASS
+PF_003,excluded rows retain no adapter outcomes,excluded=3600,PASS
+PF_004,counted rows carry predicate hashes and adapter outcomes,counted=15840,PASS
+PF_005,holdout split is hash-based and covers all relation families,rule=sha256(source_id)[0] < 96 => holdout; outcome-independent,PASS
+PF_006,denominator-integrity gate is closed,status=PASS,PASS
+PF_007,candidate admission is computed before counted/rejected aggregation,all_candidates ordering,PASS
+PF_008,predicate block does not read generated result ledgers or adapter outcomes,predicate_outcome static scan,PASS
+PF_009,"source provenance separates upstream, native, stress, and generated strata",sources=120,PASS
+PF_010,deployed-tool comparison is a bounded nearest-neighbor crosswalk,rows=8,PASS
+PF_011,predicate status is recomputed rather than trusting generator labels,rejected_predicates=1200,PASS

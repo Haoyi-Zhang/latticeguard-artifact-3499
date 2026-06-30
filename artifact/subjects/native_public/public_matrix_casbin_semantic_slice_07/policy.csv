@@ -1,0 +1,3 @@
+p, viewer, repo:public, read, allow
+p, suspended, repo:public, read, deny
+g, zoe, viewer

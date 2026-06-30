@@ -1,0 +1,6 @@
+[
+  {"uid":{"type":"User","id":"service"},"attrs":{},"parents":[]},
+  {"uid":{"type":"User","id":"alice"},"attrs":{},"parents":[]},
+  {"uid":{"type":"Action","id":"Audit"},"attrs":{},"parents":[]},
+  {"uid":{"type":"Repo","id":"AuditLog"},"attrs":{},"parents":[]}
+]

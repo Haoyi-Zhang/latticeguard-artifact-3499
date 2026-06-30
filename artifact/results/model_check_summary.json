@@ -1,0 +1,23 @@
+{
+  "bound": "roles=3;users=2;actions=1;resources=1;rules<=2;representative_user_role_assignments;acyclic_ordered_hierarchy",
+  "case_digest": "c15e910793d154461fac4cd66346422b754278e7cc5aefecfd21a5ccf68b6a93",
+  "cases_checked": 74024,
+  "failures": 0,
+  "policies_enumerated": 6336,
+  "relation_counts": {
+    "AR": 12672,
+    "DA": 2006,
+    "DD": 4884,
+    "DO": 2916,
+    "HC": 1584,
+    "HR": 10560,
+    "ID": 12096,
+    "IE": 12672,
+    "PA": 1122,
+    "RO": 8640,
+    "SM": 2916,
+    "SR": 1956
+  },
+  "relations_covered": 12,
+  "status": "PASS"
+}

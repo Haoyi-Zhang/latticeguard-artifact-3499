@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "LatticeGuard: Law-Level Metamorphic Regression Oracles for Access-Control Policy Evaluators"
+message: "If you use this artifact, cite the corresponding anonymous paper."
+authors:
+  - family-names: "Anonymous"
+    given-names: "Authors"
+version: "anonymous-clean-2026-06-21"
+date-released: "2026-06-21"

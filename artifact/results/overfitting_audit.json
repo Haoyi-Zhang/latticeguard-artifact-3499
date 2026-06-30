@@ -1,0 +1,17 @@
+{
+  "development_evaluated_obligations": 10692,
+  "development_failures": 0,
+  "development_sources": 81,
+  "errors": [],
+  "holdout_adapter_count": 3,
+  "holdout_evaluated_obligations": 5148,
+  "holdout_failures": 0,
+  "holdout_passes": 5148,
+  "holdout_relation_count": 12,
+  "holdout_sources": 39,
+  "interpretation": "Checks whether evidence survives an outcome-independent held-out source split; this is not a statistical generalization claim.",
+  "per_source_rows_failing_audit": 0,
+  "source_split_rule": "sha256(source_id)[0] < 96 => holdout; outcome-independent",
+  "sources_total": 120,
+  "status": "PASS"
+}

@@ -1,0 +1,15 @@
+check_id,status,observed,expected,rule
+DEN_001,PASS,15840,15840,only APPLICABLE_EVALUATED rows enter primary denominator
+DEN_002,PASS,15840,15840,primary pass count is computed only over applicable rows
+DEN_003,PASS,0,0,primary failure count is computed only over applicable rows
+DEN_004,PASS,3240,3240,invalid transformations are rejected before denominator accounting
+DEN_005,PASS,360,360,unsupported fragments remain outside primary pass/fail accounting
+DEN_006,PASS,0,0,all counted rows must have PASS in this artifact run
+DEN_007,PASS,"['REJECTED_NOT_COUNTED', 'UNSUPPORTED_NOT_COUNTED']",not counted statuses only,rejected/unsupported rows cannot masquerade as PASS
+DEN_008,PASS,ledger=1080;obligation=1080,equal candidate-id sets,rejections.csv and obligations rejected rows agree by candidate id
+DEN_009,PASS,casbin_py;cedar_py;opa_rego_cli,casbin_py;cedar_py;opa_rego_cli,counted adapter set must match the hash-gated execution manifest
+DEN_010,PASS,0,0,error/timeout rows cannot enter primary denominator
+DEN_011,PASS,15840,15840,coverage pass totals match primary pass count
+DEN_012,PASS,0,0,baseline/seeded controls cannot share primary row ids
+DEN_013,PASS,0,0,subject exclusions cannot appear in primary obligation rows
+DEN_014,PASS,0,0 because hash-gated OPA is counted,OPA is either hash-gated into the denominator or excluded before results

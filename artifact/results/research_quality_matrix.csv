@@ -1,0 +1,7 @@
+dimension,assessor_question,repair,status,residual_risk
+novelty,Contribution is more than a testing tool wrapper,law obligation type with predicate/rejection/minimization,closed,Broader public release witnesses would strengthen the story.
+workload,Evaluation must be large enough to stress denominator accounting,15840 applicable rows over 120 sources,closed_within_scope,Additional counted backends can be added through the same preflight contract.
+theory,Laws must not be prose-only,74024 bounded core cases and theorem ledger,closed_with_finite_certificate,Not an unbounded proof.
+baselines,Simpler explanations must be evaluated,"upstream-only, random perturbation, cross-adapter, cross-version precheck, no-gate, full oracle",closed_with_ledger,Release-pair expansion is an orthogonal external-validity extension.
+verifiability,Paper numbers must be replayable,"claim manifest, macro snapshot, hash ledger, aggregate verifier",closed,Quality lens must run local scripts or inspect ledgers.
+presentation,Main paper must carry the contribution without relying on the repository,"abstract, contribution list, law catalog, evidence flow, RQs, threats",closed_in_current_tex,Visual presentation check is rerun after each edit.

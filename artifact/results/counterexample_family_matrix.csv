@@ -1,0 +1,15 @@
+adapter_id,relation_id,counterexamples
+casbin_py_mutant_allow_overrides,DO,480
+casbin_py_mutant_allow_overrides,SR,240
+casbin_py_mutant_no_hierarchy,DO,240
+casbin_py_mutant_no_hierarchy,HR,360
+casbin_py_mutant_no_hierarchy,PA,360
+casbin_py_mutant_strip_allows,DO,480
+casbin_py_mutant_strip_denies,DO,480
+casbin_py_mutant_strip_denies,SR,240
+cedar_py_mutant_ignore_forbid,DO,480
+cedar_py_mutant_ignore_forbid,SR,240
+cedar_py_mutant_no_hierarchy,DO,240
+cedar_py_mutant_no_hierarchy,HR,360
+cedar_py_mutant_no_hierarchy,PA,360
+cedar_py_mutant_strip_permits,DO,480

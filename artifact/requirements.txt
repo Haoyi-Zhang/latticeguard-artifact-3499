@@ -1,0 +1,8 @@
+# Pinned runtime packages used by the artifact scripts.
+# The artifact also contains artifact/vendor_python for this execution.
+bracex==2.6
+cedarpy==4.8.3
+pycasbin==2.8.0
+pypdf==5.9.0
+simpleeval==1.0.7
+wcmatch==10.1

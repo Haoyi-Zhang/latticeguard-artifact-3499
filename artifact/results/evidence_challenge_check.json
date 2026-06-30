@@ -1,0 +1,9 @@
+{
+  "blocking_repairs_after_quality_gate": 0,
+  "evidence_challenge_score": 100,
+  "impact_claims": 4,
+  "missing_dimensions": [],
+  "quality_dimensions": 10,
+  "quality_lenses": 5,
+  "status": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "all_candidates_as_denominator_pass_rate": "0.00",
+  "audit_claim": "Deployed testing idioms supply useful point tests, coverage pressure, or differential signals; only the full law-level oracle supplies applicability, denominator rejection, and minimized replay together.",
+  "casbin_native_selftests": 226,
+  "cedar_native_selftests": 225,
+  "cross_adapter_comparable_rows": 5280,
+  "invalid_transformations_rejected": 3240,
+  "minimized_counterexamples": 5040,
+  "native_selftest_failures": 0,
+  "native_selftest_rows": 451,
+  "only_full_oracle_has_all_features": true,
+  "opa_normalized_decision_rows": 0,
+  "primary_evaluated_obligations": 15840,
+  "release_pair_bug_claimed": false,
+  "rows": 8,
+  "status": "PASS"
+}

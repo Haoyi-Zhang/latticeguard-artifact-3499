@@ -1,0 +1,14 @@
+baseline_id,rows,seeded_killed_or_detected,oracle_failures,relative_seeded_detection_vs_full,invalid_transformations_admitted,denominator_safety_score,semantic_replay_rate,interpretation
+CROSS_ADAPTER_DIFFERENTIAL_ONLY,1,0,0,0.000000,0,,,finds no disagreement in the comparable current slice and therefore cannot replace law-level invariants
+CROSS_VERSION_DIFFERENTIAL_PRECHECK,1,0,0,0.000000,0,,,"baseline retained for adversarial comparison; it lacks either predicates, replay, or law-level failure interpretation"
+LATTICEGUARD_FULL_ORACLE,1,1,0,1.000000,0,1.000000,1.000000,"full oracle is the only baseline row that jointly has law predicates, rejection discipline, seeded drift detection, and replayable counterexamples"
+NO_APPLICABILITY_GATE,1,0,0,0.000000,1200,0.000000,,"admits 1200 invalid transformations, showing why denominator gating is part of the oracle rather than a reporting convention"
+PROPERTY_GENERATOR_NO_REJECTION,1,0,0,0.000000,1200,0.000000,,"admits 1200 invalid transformations, showing why denominator gating is part of the oracle rather than a reporting convention"
+RANDOM_VALID_PERTURB,1,0,0,0.000000,0,,,"baseline retained for adversarial comparison; it lacks either predicates, replay, or law-level failure interpretation"
+SEEDED_MUTANT_POSITIVE_CONTROL,36960,5040,5040,0.136364,0,,,positive-control rows kill 5040/36960 row-level seeded drifts before minimization aggregation
+SINGLE_RELATION,12,4,0,0.000794,0,,,single-law ablations detect 4 relation-local drift families but cannot cover the full relation lattice
+UPSTREAM_ONLY,3,0,0,0.000000,0,,,native upstream tests exercise examples but do not encode metamorphic before/after law obligations
+SEEDED_MUTANT_POSITIVE_CONTROL_BY_RELATION,,2880,,0.571429,,,,DO contributed 2880 independently replayed seeded drift detections
+SEEDED_MUTANT_POSITIVE_CONTROL_BY_RELATION,,720,,0.142857,,,,HR contributed 720 independently replayed seeded drift detections
+SEEDED_MUTANT_POSITIVE_CONTROL_BY_RELATION,,720,,0.142857,,,,PA contributed 720 independently replayed seeded drift detections
+SEEDED_MUTANT_POSITIVE_CONTROL_BY_RELATION,,720,,0.142857,,,,SR contributed 720 independently replayed seeded drift detections

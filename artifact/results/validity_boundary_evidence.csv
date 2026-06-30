@@ -1,0 +1,15 @@
+check_id,status,rule
+VB_001,PASS,candidate outcome classes partition the generated obligation surface
+VB_002,PASS,applicable rows match the primary denominator
+VB_003,PASS,rejected rows remain visible outside the denominator
+VB_004,PASS,unsupported fragments remain visible outside the denominator
+VB_005,PASS,primary failures are computed only after applicability and support admission
+VB_006,PASS,representative rejection reasons are available for inspection
+VB_007,PASS,seeded positive-control rows match the frozen summary
+VB_008,PASS,seeded positive-control kills match the frozen summary
+VB_009,PASS,failure sensitivity is spread across more than one law family and drift operator
+VB_010,PASS,OPA/Rego hierarchy evidence is bounded to the normalized-decision fragment
+VB_011,PASS,outcome-independent holdout contains enough evaluated obligations for an audit surface
+VB_012,PASS,holdout covers all relation families
+VB_013,PASS,holdout covers all counted adapters
+VB_014,PASS,stress witnesses carry an explicit non-prevalence claim boundary

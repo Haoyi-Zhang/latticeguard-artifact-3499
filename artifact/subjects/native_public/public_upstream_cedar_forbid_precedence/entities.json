@@ -1,0 +1,8 @@
+[
+  {"uid":{"type":"User","id":"alice"},"attrs":{},"parents":[{"type":"Role","id":"viewer"}]},
+  {"uid":{"type":"User","id":"mallory"},"attrs":{},"parents":[{"type":"Role","id":"viewer"},{"type":"Role","id":"suspended"}]},
+  {"uid":{"type":"Role","id":"viewer"},"attrs":{},"parents":[]},
+  {"uid":{"type":"Role","id":"suspended"},"attrs":{},"parents":[]},
+  {"uid":{"type":"Action","id":"Read"},"attrs":{},"parents":[]},
+  {"uid":{"type":"Repo","id":"RepoPublic"},"attrs":{},"parents":[]}
+]

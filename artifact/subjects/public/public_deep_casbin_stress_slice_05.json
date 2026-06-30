@@ -1,0 +1,142 @@
+{
+  "license": "Apache-2.0; raw native fixture hashes and normalized subject hash recorded in source_manifest.csv",
+  "origin": "Native casbin public fixture bundle imported and normalized from official example semantics; native fixtures=public_deep_casbin_stress_slice_05_model.conf,public_deep_casbin_stress_slice_05_policy.csv",
+  "policy": {
+    "roles": {
+      "editor": {
+        "inherits": [
+          "viewer"
+        ]
+      },
+      "observer_unused": {
+        "inherits": []
+      },
+      "owner": {
+        "inherits": [
+          "editor"
+        ]
+      },
+      "shadow_role": {
+        "inherits": []
+      },
+      "suspended": {
+        "inherits": []
+      },
+      "viewer": {
+        "inherits": []
+      }
+    },
+    "rules": [
+      {
+        "action": "write",
+        "effect": "allow",
+        "id": "r_fmcb05_allow_editor_write_private",
+        "resource": "repo:private",
+        "role": "editor"
+      },
+      {
+        "action": "delete",
+        "effect": "allow",
+        "id": "r_fmcb05_allow_owner_delete_private",
+        "resource": "repo:private",
+        "role": "owner"
+      },
+      {
+        "action": "read",
+        "effect": "allow",
+        "id": "r_fmcb05_allow_shadow_reports",
+        "resource": "repo:reports",
+        "role": "shadow_role"
+      },
+      {
+        "action": "list",
+        "effect": "allow",
+        "id": "r_fmcb05_allow_viewer_list_build",
+        "resource": "build:ci",
+        "role": "viewer"
+      },
+      {
+        "action": "read",
+        "effect": "allow",
+        "id": "r_fmcb05_allow_viewer_read_public",
+        "resource": "repo:public",
+        "role": "viewer"
+      },
+      {
+        "action": "read",
+        "effect": "deny",
+        "id": "r_fmcb05_deny_shadow_reports",
+        "resource": "repo:reports",
+        "role": "shadow_role"
+      },
+      {
+        "action": "read",
+        "effect": "deny",
+        "id": "r_fmcb05_deny_suspended_read_public",
+        "resource": "repo:public",
+        "role": "suspended"
+      }
+    ],
+    "user_roles": {
+      "alice": [
+        "viewer"
+      ],
+      "bob": [
+        "editor"
+      ],
+      "carol": [
+        "owner"
+      ],
+      "dave": [
+        "suspended"
+      ],
+      "erin": [
+        "shadow_role"
+      ],
+      "nobody_unused": [
+        "observer_unused"
+      ]
+    }
+  },
+  "requests": [
+    {
+      "action": "read",
+      "principal": "alice",
+      "request_id": "req_alice_read_public",
+      "resource": "repo:public"
+    },
+    {
+      "action": "read",
+      "principal": "mallory",
+      "request_id": "req_mallory_read_public",
+      "resource": "repo:public"
+    },
+    {
+      "action": "read",
+      "principal": "bob",
+      "request_id": "req_bob_read_public",
+      "resource": "repo:public"
+    },
+    {
+      "action": "read",
+      "principal": "carol",
+      "request_id": "req_carol_read_public",
+      "resource": "repo:public"
+    },
+    {
+      "action": "read",
+      "principal": "dave",
+      "request_id": "req_dave_read_public",
+      "resource": "repo:public"
+    },
+    {
+      "action": "read",
+      "principal": "erin",
+      "request_id": "req_erin_read_reports",
+      "resource": "repo:reports"
+    }
+  ],
+  "source_id": "public_deep_casbin_stress_slice_05",
+  "source_url": "https://casbin.apache.org/docs/syntax-for-models/",
+  "stratum": "public_native_import_slice"
+}

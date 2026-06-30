@@ -1,0 +1,10 @@
+[
+  {"uid":{"type":"User","id":"alice"},"attrs":{},"parents":[{"type":"UserGroup","id":"jane_friends"}]},
+  {"uid":{"type":"User","id":"bob"},"attrs":{},"parents":[]},
+  {"uid":{"type":"Action","id":"view"},"attrs":{},"parents":[]},
+  {"uid":{"type":"Action","id":"delete"},"attrs":{},"parents":[]},
+  {"uid":{"type":"Photo","id":"VacationPhoto94.jpg"},"attrs":{},"parents":[{"type":"Album","id":"jane_vacation"}]},
+  {"uid":{"type":"Photo","id":"passportscan.jpg"},"attrs":{},"parents":[{"type":"Account","id":"jane"}]},
+  {"uid":{"type":"Album","id":"jane_vacation"},"attrs":{},"parents":[]},
+  {"uid":{"type":"UserGroup","id":"jane_friends"},"attrs":{},"parents":[]}
+]

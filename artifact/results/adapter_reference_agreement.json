@@ -1,0 +1,9 @@
+{
+  "adapters_covered": 3,
+  "evidence": "adapter before/after decisions joined with soundness_checks reference decisions by candidate_id",
+  "failures": 0,
+  "relations_covered": 12,
+  "rows_checked": 15840,
+  "sources_covered": 120,
+  "status": "PASS"
+}

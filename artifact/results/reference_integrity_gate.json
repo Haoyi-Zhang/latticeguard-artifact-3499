@@ -1,0 +1,11 @@
+{
+  "cited_entries": 73,
+  "crosswalk_rows_covered": 73,
+  "evidence": "references.bib, main.tex, supplement.tex, reference_integrity_crosswalk.csv, and reference_ledger.csv parsed locally",
+  "failures": 0,
+  "reference_entries": 73,
+  "reference_ledger_failures": 0,
+  "reference_ledger_rows": 37,
+  "status": "PASS",
+  "warnings": 0
+}

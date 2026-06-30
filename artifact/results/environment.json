@@ -1,0 +1,19 @@
+{
+  "adapter_attempted": [
+    "opa_rego_cli",
+    "casbin_py",
+    "cedar_py"
+  ],
+  "adapter_executed": [
+    "casbin_py",
+    "cedar_py",
+    "opa_rego_cli"
+  ],
+  "deterministic_seed": "LatticeGuard-anonymous-eval-seed-2026-06-21",
+  "evaluation_packet": "anonymous_artifact",
+  "hash_seed_normalized": "outputs intentionally independent of PYTHONHASHSEED; tested externally for 0/1/42",
+  "platform": "Linux-6.2.0-37-generic-x86_64-with-glibc2.35",
+  "python": "3.13.14",
+  "timing_policy": "runtime_ms/memory_kb fields normalized in deterministic claim ledger; raw timing is not claimed in primary outputs",
+  "vendor_python_path": "vendor_python"
+}
