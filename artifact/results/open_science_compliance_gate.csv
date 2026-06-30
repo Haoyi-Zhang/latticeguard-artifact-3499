@@ -1,6 +1,6 @@
 check_id,rule,observed,status
-OSC_001,main paper contains an Availability statement,63261,PASS
-OSC_002,Availability appears after conclusion/threats and before references,conclusion=61463;data=63261;refs=63999,PASS
+OSC_001,main paper contains an Availability statement,64878,PASS
+OSC_002,Availability appears after conclusion/threats and before references,conclusion=63691;data=64878;refs=65596,PASS
 OSC_003,"Data Availability states anonymized package contents, reproducibility, privacy boundary, and release intent",all_terms_present,PASS
 OSC_004,supplement remains anonymous and has no acknowledgement section,ack=0;anonymous=1,PASS
 OSC_005,Data Availability names long-term preservation beyond the version-control mirror,zenodo=True;archive=True,PASS

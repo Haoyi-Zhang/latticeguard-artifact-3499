@@ -3,8 +3,8 @@ MPG_001,"main manuscript contains no concrete artifact path, file extension, or 
 MPG_002,released manuscript text contains no instruction/dialogue/evasion trace,0,0,PASS
 MPG_003,main manuscript avoids code-font identifiers and function-like presentation,0,0,PASS
 MPG_004,main section titles present the research system rather than repository mechanics,0,0,PASS
-MPG_005,main text minimizes repository/script/function vocabulary,repository=1;script=0;function=1,repository<=2;script<=3;function<=2,PASS
-MPG_006,main text uses audit terminology sparingly rather than reading as an artifact checklist,gate=0;ledger=3,gate<=15;ledger<=8,PASS
+MPG_005,main text minimizes repository/script/function vocabulary,repository=2;script=0;function=1,repository<=2;script<=3;function<=2,PASS
+MPG_006,main text uses audit terminology sparingly rather than reading as an artifact checklist,gate=7;ledger=3,gate<=15;ledger<=8,PASS
 MPG_007,"abstract states problem, method, and evidence without relying on repository reading",problem=True;method=True;evidence=True,all true,PASS
 MPG_008,introduction exposes a concise contribution list,4,>=4,PASS
 MPG_009,submission text avoids side discussion about preparation tools,main=0;supplement=0,main=0;supplement=0,PASS

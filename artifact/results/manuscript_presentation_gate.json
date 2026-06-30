@@ -1,9 +1,9 @@
 {
   "failed_checks": [],
   "failures": 0,
-  "main_gate_mentions": 0,
+  "main_gate_mentions": 7,
   "main_ledger_mentions": 3,
-  "main_repository_mentions": 1,
+  "main_repository_mentions": 2,
   "presentation_checks": 9,
   "status": "PASS"
 }

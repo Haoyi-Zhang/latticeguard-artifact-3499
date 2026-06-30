@@ -26,14 +26,14 @@
 \newcommand{\Unsup}{\mathsf{unsupported}}
 \newcommand{\Core}{\mathsf{Core}}
 
-\title{LatticeGuard: Law-Level Metamorphic Regression Oracles for Access-Control Policy Evaluators}
+\title{LatticeGuard: Law-Guided Regression Oracles for Access-Control Evaluators}
 \author{Anonymous Author(s)}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Access-control policy evaluators regress when authorization engines add features, optimize semantics, or refactor policy support, yet developers rarely have complete decision tables for every principal, action, and resource.  They usually know laws--deny dominance, default deny, hierarchy preservation, off-slice renaming--but not a hand-written oracle for every transformed request.  LatticeGuard converts these laws into executable metamorphic obligations whose applicability predicate decides whether a candidate is counted, rejected as invalid, or reported as unsupported.  In a deterministic offline evaluation over Casbin and Cedar native fragments plus an OPA/Rego normalized-decision fragment whose hierarchy closure is supplied by the reference core, LatticeGuard evaluates \LGPrimaryObligations{} applicable obligations with \LGPrimaryFailures{} primary backend failures, rejects \LGRejected{} invalid transformations, and records \LGUnsupported{} unsupported fragments outside the denominator.  The zero-primary-failure result is a release-gating baseline, not a bug-discovery claim; sensitivity is validated separately with \LGSeededRows{} seeded semantic-drift controls, a \LGSeededKillRate{}\% positive-control kill rate, \LGCounterexamples{} minimized replayable counterexamples, and an \LGAllCandidatePassRate{}\% pessimistic all-candidate accounting view.  Law-level regression evidence becomes credible only when applicability, rejection, theory replay, minimization, deployed-test comparison, and conservative denominator accounting are first-class evidence objects.
+Access-control policy evaluators regress when authorization engines add features, optimize semantics, or refactor policy support, yet developers rarely have complete decision tables for every principal, action, and resource.  They usually know laws--deny dominance, default deny, hierarchy preservation, off-slice renaming--but not a hand-written oracle for every transformed request.  LatticeGuard converts these laws into executable metamorphic obligations and attaches an applicability predicate to each obligation, so a candidate is counted only when the concrete before/after pair is comparable, valid, and inside declared language support.  Sensitivity is exercised first: \LGSeededRows{} seeded semantic-drift controls produce a \LGSeededKillRate{}\% positive-control kill rate and \LGCounterexamples{} minimized replayable counterexamples.  The release-gating run then evaluates \LGPrimaryObligations{} applicable obligations over Casbin and Cedar native fragments plus an OPA/Rego normalized-decision fragment, with \LGPrimaryFailures{} primary backend failures, \LGRejected{} rejected invalid transformations, and \LGUnsupported{} unsupported fragments kept outside the denominator.  The contribution is not a bug claim or a pooled success rate; it is an evidence boundary that makes a clean evaluator run reviewable through applicability, rejection, theory replay, minimization, deployed-test comparison, and conservative denominator accounting.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -43,11 +43,11 @@ access control, policy evaluation, metamorphic testing, regression oracle, autho
 \section{Introduction}
 Access-control policies evolve continuously: teams add denies, restructure role hierarchies, split resource scopes, rename policy atoms, or upgrade an evaluator.  Each edit can preserve, reduce, or intentionally change an authorization decision.  Yet developers seldom possess a complete oracle for every principal/action/resource request after every edit.  They instead reason with laws: default deny should remain deny when no matching rule becomes reachable; a matching forbid should dominate a matching permit; adding an already implied hierarchy edge should not change a decision; and an off-slice alpha-renaming should be observationally irrelevant.
 
-The problem is not simply missing tests.  It is an oracle problem in a semantic domain where invalid transformations are easy to generate.  Metamorphic testing is effective when individual expected outputs are unavailable \cite{segura2016survey,chen2016mtcybersecurity,mansur2023datalog}, and differential testing has found important implementation faults in domains without single-output oracles \cite{mckeeman1998differential,yang2011csmith,le2014emi,petsios2017nezha}.  However, access-control policies make naive metamorphic testing dangerous.  A random extension can become reachable from the request principal; a renaming can touch the queried resource; a rule permutation can cross into a priority-sensitive fragment.  Counting such cases as passed metamorphic tests creates a convincing but false denominator.
+The problem is not simply missing tests.  It is an oracle problem in a semantic domain where invalid transformations are easy to generate.  Metamorphic testing was designed for settings in which individual expected outputs are unavailable \cite{segura2016survey}; cybersecurity and logic-engine studies show why that idea is attractive beyond numerical programs \cite{chen2016mtcybersecurity} \cite{mansur2023datalog}.  Differential testing offers a parallel lesson: McKeeman's compiler formulation \cite{mckeeman1998differential}, Csmith \cite{yang2011csmith}, equivalence-modulo-input validation \cite{le2014emi}, and Nezha \cite{petsios2017nezha} all make disagreement useful only when the generated cases are meaningful.  Access-control policies make that last condition fragile.  A random extension can become reachable from the request principal; a renaming can touch the queried resource; a rule permutation can cross into a priority-sensitive fragment.  Counting such cases as passed metamorphic tests creates a convincing but false denominator.
 
-LatticeGuard's thesis is that access-control laws should be compiled into \emph{applicability-checked obligations}.  An obligation is not just a before/after policy pair.  It contains a source request, follow-up request, relation identifier, applicability predicate, expected decision relation, rejection condition, unsupported-fragment condition, and minimization recipe.  A candidate contributes to the measured pass denominator only if its predicate establishes that the law is applicable to the concrete before/after pair.  Invalid candidates remain visible as rejected evidence; unsupported language fragments remain visible as unsupported evidence; neither can inflate results.
+LatticeGuard's thesis is that access-control laws should be compiled into obligations whose applicability can be checked.  Consider adding a deny rule for suspended users.  The law is not merely ``the edited policy should deny more requests.''  It applies only when the new deny is reachable for the same request slice and when no unrelated role or resource edit changes the comparison.  LatticeGuard records that side condition as part of the obligation.  A candidate contributes to the measured pass denominator only if its predicate establishes that the law applies to the concrete before/after pair.  Invalid candidates remain visible as rejected evidence; unsupported language fragments remain visible as unsupported evidence; neither can inflate results.
 
-This design targets policy \emph{evaluators}, not policy authoring assistants.  The research object is the evaluator's treatment of deny/allow composition, principal/resource/action reachability, role/resource closure, shadowing, monotonicity, dominance, and refactoring-preserving transformations.  We demonstrate the method on Casbin's model/effect structure and native role matcher language \cite{casbin_model_docs,casbin_effect_docs}, Cedar's PARC request model with forbid-overrides-permit semantics \cite{cedar_authz_docs,cedar_request_docs}, and OPA/Rego only as a normalized-decision fragment over a law object \cite{opa_language_docs,opa_cli_docs}.  The counted evidence is CPU-local, offline-replayable, and frozen before claim generation, so the paper's contribution is not a bug story in one engine but a reusable law-to-obligation method.
+This design targets policy \emph{evaluators}, not policy authoring assistants.  The research object is the evaluator's treatment of deny/allow composition, request reachability, role/resource closure, shadowing, monotonicity, dominance, and refactoring-preserving transformations.  Casbin contributes a model/effect structure and native role matcher language \cite{casbin_model_docs} \cite{casbin_effect_docs}; Cedar contributes a PARC request model with forbid-overrides-permit semantics \cite{cedar_authz_docs} \cite{cedar_request_docs}; OPA/Rego is used only as a normalized-decision fragment over a law object \cite{opa_language_docs} \cite{opa_cli_docs}.  The counted evidence is CPU-local, offline-replayable, and frozen before claim generation, so the paper's contribution is not a bug story in one engine but a reusable law-to-obligation method.
 
 Together, these pieces make denominator admission the object of evaluation rather than a reporting detail.  The paper contributes:
 \begin{itemize}
@@ -59,7 +59,7 @@ Together, these pieces make denominator admission the object of evaluation rathe
 
 \section{Problem Setting and Scope}
 \label{sec:problem}
-A policy evaluator maps a policy $P$ and request $q=(p,a,r,c)$ to a decision.  Casbin policies commonly separate request definition, policy definition, effect, and matcher clauses \cite{casbin_model_docs,casbin_rbac_docs,casbin_priority_docs}.  Cedar policies evaluate a principal/action/resource/context request against permit and forbid policies with forbid precedence and default deny \cite{cedar_authz_docs,cedar_entities_docs,cedar_schema_docs}.  These languages expose different syntax and feature sets, but many regression risks are law-shaped.
+A policy evaluator maps a policy $P$ and request $q=(p,a,r,c)$ to a decision.  Casbin separates request definition, policy definition, effect, and matcher clauses \cite{casbin_model_docs}; its RBAC and priority material make role closure and order-sensitive evaluation explicit \cite{casbin_rbac_docs} \cite{casbin_priority_docs}.  Cedar evaluates a principal/action/resource/context request against permit and forbid policies with forbid precedence and default deny \cite{cedar_authz_docs}; its entity and schema material define the graph and type boundaries that a regression oracle must respect \cite{cedar_entities_docs} \cite{cedar_schema_docs}.  These languages expose different syntax and feature sets, but many regression risks are law-shaped.
 
 \subsection{Motivating task}
 Suppose a maintainer adds an explicit deny for suspended users, refactors a viewer/editor/owner hierarchy, and then upgrades an evaluator.  A conventional unit test can check one request.  It cannot easily state that the refactoring preserves all request slices whose role closure is unchanged, or that a new deny should dominate an existing allow exactly when it matches the same slice.  A differential test can compare two evaluators, but it does not explain whether disagreement reflects a real semantic drift, unsupported language mismatch, or an invalid test transformation.  LatticeGuard therefore treats the developer task as follows: from a law $\ell$, a policy slice $s$, and an adapter $A$, generate an obligation $o$ whose applicability can be independently recomputed.
@@ -178,28 +178,42 @@ LatticeGuard follows a generate--filter--evaluate--minimize pipeline.  The gener
 \begin{figure*}[t]
 \centering
 \begin{tikzpicture}[x=1cm,y=1cm,
-  lgbox/.style={rectangle, draw=black!72, rounded corners=2pt, align=center,
-    minimum height=0.88cm, text width=2.72cm, inner xsep=3pt, inner ysep=2.4pt,
+  lgbox/.style={rectangle, draw=black!68, rounded corners=2pt, align=center,
+    minimum height=0.82cm, text width=2.35cm, inner xsep=3pt, inner ysep=2.1pt,
+    fill=black!3,
     text height=1.45ex, text depth=.34ex,
     font=\rmfamily\fontsize{7.0}{7.8}\selectfont},
-  lgarrow/.style={-Latex, line width=0.55pt, draw=black!70}]
-\node[lgbox] (subjects) at (0,1.4) {\LGSources{} subject sources\\official and native slices};
-\node[lgbox] (gen) at (3.7,1.4) {candidate generator\\law transformations};
-\node[lgbox] (pred) at (7.4,1.4) {predicate engine\\\LGPredicateWitnesses{} witnesses};
-\node[lgbox] (eval) at (11.1,1.4) {\LGPrimaryObligations{} applicable\\adapter evaluations};
-\node[lgbox] (pass) at (14.8,1.4) {\LGPrimaryPasses{} passes\\0 primary failures};
-\node[lgbox] (reject) at (7.4,0) {\LGRejected{} rejected\\not counted};
-\node[lgbox] (unsup) at (11.1,0) {\LGUnsupported{} unsupported\\not counted};
-\node[lgbox] (mut) at (14.8,0) {\LGSeededRows{} seeded drifts\\\LGCounterexamples{} replays};
-\draw[lgarrow] (subjects) -- (gen);
-\draw[lgarrow] (gen) -- (pred);
-\draw[lgarrow] (pred) -- (eval);
+  lggate/.style={diamond, aspect=2.1, draw=black!72, align=center,
+    minimum height=0.88cm, text width=1.95cm, inner sep=1.5pt,
+    fill=black!8, text height=1.45ex, text depth=.34ex,
+    font=\rmfamily\fontsize{6.8}{7.5}\selectfont},
+  lgnote/.style={rectangle, draw=black!35, rounded corners=1.5pt, align=center,
+    minimum height=0.54cm, text width=2.2cm, inner xsep=2pt, inner ysep=1.8pt,
+    fill=black!1, text height=1.25ex, text depth=.28ex,
+    font=\rmfamily\fontsize{6.5}{7.1}\selectfont},
+  lgarrow/.style={-Latex, line width=0.62pt, draw=black!68, line cap=round, line join=round},
+  lgsoft/.style={-Latex, line width=0.48pt, draw=black!46, line cap=round, line join=round}]
+\node[lgbox] (subjects) at (0,1.5) {\LGSources{} subjects\\official/native};
+\node[lgbox] (contract) at (2.9,1.5) {law contract\\$\ell,\pi_\ell,\rho_\ell,u_\ell$};
+\node[lggate] (gate) at (5.8,1.5) {admit?\\predicate};
+\node[lgbox] (eval) at (8.7,1.5) {\LGPrimaryObligations{} applicable\\adapter replay};
+\node[lgbox] (pass) at (11.6,1.5) {\LGPrimaryPasses{} passes\\\LGPrimaryFailures{} primary failures};
+\node[lgbox] (claim) at (14.5,1.5) {bounded claim\\reviewable run};
+\node[lgnote] (reject) at (4.45,0.10) {\LGRejected{} rejected\\invalid law edit};
+\node[lgnote] (unsup) at (7.15,0.10) {\LGUnsupported{} unsupported\\outside fragment};
+\node[lgnote] (seed) at (10.25,0.10) {\LGSeededRows{} seeded drifts\\\LGCounterexamples{} replays};
+\node[lgnote] (audit) at (13.25,0.10) {denominator\\stays auditable};
+\draw[lgarrow] (subjects) -- (contract);
+\draw[lgarrow] (contract) -- (gate);
+\draw[lgarrow] (gate) -- (eval);
 \draw[lgarrow] (eval) -- (pass);
-\draw[lgarrow] (pred) -- (reject);
-\draw[lgarrow] (pred) -- (unsup);
-\draw[lgarrow] (eval) -- (mut);
+\draw[lgarrow] (pass) -- (claim);
+\draw[lgsoft] (gate.south west) .. controls +(0,-0.65) and +(0,0.55) .. (reject.north);
+\draw[lgsoft] (gate.south east) .. controls +(0,-0.65) and +(0,0.55) .. (unsup.north);
+\draw[lgsoft] (eval.south) .. controls +(0,-0.65) and +(0,0.55) .. (seed.north);
+\draw[lgsoft] (claim.south) .. controls +(0,-0.65) and +(0,0.55) .. (audit.north);
 \end{tikzpicture}
-\caption{Evidence flow.  The contribution is the typed flow from law to predicate-checked obligation; rejected and unsupported candidates are preserved as evidence but excluded from the pass denominator.}
+\caption{Evidence flow.  A law contract becomes a counted regression row only after the predicate gate admits the before/after slice; rejected edits, unsupported fragments, and seeded controls remain visible but outside the primary pass denominator.}
 \label{fig:flow}
 \end{figure*}
 
@@ -261,7 +275,7 @@ The resulting corpus is deliberately heterogeneous.  Some sources are official s
 
 \begin{table}[t]
 \centering
-\caption{Current evidence summary.}
+\caption{Current evidence summary.  Primary failures are release-gating failures; rejected and unsupported rows audit admission boundaries.}
 \label{tab:results}
 \begin{tabular}{lr}
 \toprule
@@ -306,7 +320,7 @@ Bounded model-check cases & \LGModelCheckCases{} \\
 \label{sec:evaluation}
 The evaluation asks five questions: RQ1, can executable predicates separate applicable obligations from invalid transformations? RQ2, do counted evaluator backends satisfy the law catalog over frozen subjects? RQ3, do seeded drifts exercise failure/minimization paths? RQ4, is the law catalog backed by executable theory rather than prose? RQ5, do deployed idioms and component ablations explain away the contribution?
 
-The primary pass rate is a regression-oracle result, not a classifier score.  If a current backend honors the declared law over a supported fragment, the expected primary outcome is a pass; a failure would indicate a semantic regression or wrapper/reference disagreement.  We therefore validate sensitivity separately with seeded semantic drifts that intentionally break deny precedence, hierarchy closure, forbid effects, permit stripping, and allow stripping.  The primary result is exactly \LGPrimaryPasses{}/\LGPrimaryObligations{} passes over pre-admitted obligations.  A separate denominator-pressure view pessimistically counts rejected and unsupported candidates against the run, yielding a \LGAllCandidatePassRate{}\% accounting view; it audits the admission boundary and does not replace the primary rate.  This separation lets the experiment report zero observed primary law violations without using the absence of bugs as evidence that the oracle is sensitive.
+The first reading of the evaluation is sensitivity, not a leaderboard score.  Seeded semantic drifts break deny precedence, hierarchy closure, forbid effects, permit stripping, and allow stripping so that the failure path must produce minimized witnesses.  The release-gating stream is interpreted under that positive-control evidence: if a backend honors the declared law over a supported fragment, the expected primary outcome is a pass; a failure would indicate semantic regression or wrapper/reference disagreement.  The primary result is \LGPrimaryPasses{}/\LGPrimaryObligations{} passes over pre-admitted obligations.  A denominator-pressure view pessimistically counts rejected and unsupported candidates against the run, yielding a \LGAllCandidatePassRate{}\% accounting view; it audits admission rather than replacing the primary rate.
 
 \subsection{RQ1: applicability discipline}
 The predicate engine computed \LGPredicateWitnesses{} candidate witnesses.  Of these, \LGPrimaryObligations{} adapter-level obligations entered the denominator; \LGRejected{} invalid transformations and \LGUnsupported{} unsupported fragments were separately reported.  The most important rejected families are default-deny candidates that add reachable allows, hierarchy transformations that reverse a parent relation, alpha-renamings that touch the requested principal, scope splits that drop the only matching permission, and rule-order tests in priority-sensitive fragments.  These are not failures of LatticeGuard; they are evidence that the oracle does not count unsound tests.
@@ -322,7 +336,7 @@ RQ4 has two parts: whether the laws have executable support and whether the subj
 
 \begin{table}[t]
 \centering
-\caption{Quality challenges and evidence.}
+\caption{Quality challenges and evidence.  The responses are gate checks, not post hoc assurances.}
 \label{tab:objections}
 \begin{tabular}{p{0.32\linewidth}p{0.55\linewidth}}
 \toprule
@@ -377,13 +391,13 @@ The baselines show why the design is not reducible to more tests.  Point tests d
 
 
 \subsection{Baseline design criteria}
-The baselines were selected to be explanatory rather than ornamental.  A fair baseline must share the same subjects, adapters, and replay infrastructure; otherwise an improvement could come from easier inputs rather than a better oracle.  Each baseline removes one component from the evidence chain: predicate checks, rejection ledger, native material, minimization, or bounded law support.  This controlled design follows oracle-problem evaluation practice \cite{barr2015oracle,anand2013orchestrated} and mutation-testing practice \cite{ammann2016introduction,jia2011mutation,papadakis2019mutation,just2014mutants}.
+The baselines were selected to be explanatory rather than ornamental.  A fair baseline must share the same subjects, adapters, and replay infrastructure; otherwise an improvement could come from easier inputs rather than a better oracle.  Each baseline removes one component from the evidence chain: predicate checks, rejection ledger, native material, minimization, or bounded law support.  The design follows oracle-problem evaluation practice from Barr et al. \cite{barr2015oracle} and Anand et al. \cite{anand2013orchestrated}.  It also borrows mutation-testing pressure from Ammann and Offutt's testing treatment \cite{ammann2016introduction}, Jia and Harman's survey \cite{jia2011mutation}, Papadakis et al.'s analysis \cite{papadakis2019mutation}, and Defects4J-style controlled bug evidence \cite{just2014mutants}.
 
 The seeded semantic-drift family is the positive-control sensitivity test.  It does not pretend to be a discovered vulnerability.  Instead, it tests whether the method can produce a law-named, minimized counterexample when an evaluator violates deny dominance, hierarchy closure, forbid precedence, allow stripping, or permit stripping.  Without this control, a zero-failure primary run would leave the counterexample path untested.  With it, readers can inspect both the no-failure primary result and the live failure-reduction machinery.
 
 \begin{table}[t]
 \centering
-\caption{Ablation logic over the seeded fault model.}
+\caption{Ablation logic over the seeded fault model.  Each ablation removes one admission or replay mechanism.}
 \label{tab:ablations}
 \begin{tabular}{p{0.35\linewidth}p{0.50\linewidth}}
 \toprule
@@ -402,14 +416,14 @@ Cross-adapter only & disagreement lacks law-level explanation \\
 \end{tabular}
 \end{table}
 
-This baseline structure follows the evaluation logic of strong testing papers: the comparison isolates which mechanism accounts for the improvement, rather than merely reporting that a new tool found more examples.  It also clarifies the contribution boundary with XACML request generation \cite{bertolino2010systematic,bertolino2012xacmlrequests}, policy coverage metrics \cite{martin2006coverage,martin2008quality}, multiple-implementation policy testing \cite{li2008xacmlmultiple}, model-based policy tests \cite{pretschner2008model}, and policy change-impact analysis \cite{fisler2005verification,martin2007changeimpact}.
+This baseline structure follows the evaluation logic of strong testing papers: the comparison isolates which mechanism accounts for the improvement, rather than merely reporting that a new tool found more examples.  It also clarifies the contribution boundary.  XACML request generation contributes systematic request construction \cite{bertolino2010systematic} and automated policy-test inputs \cite{bertolino2012xacmlrequests}.  Policy coverage metrics explain why request breadth matters \cite{martin2006coverage} and why quality cannot be reduced to syntax coverage \cite{martin2008quality}.  Multiple-implementation policy testing supplies a differential comparison surface \cite{li2008xacmlmultiple}; model-based policy tests add specification-driven test construction \cite{pretschner2008model}; verification and change-impact work explain why policy evolution needs semantic checks \cite{fisler2005verification} \cite{martin2007changeimpact}.
 
 \subsection{Why these baselines are adversarial}
 A weak evaluation would compare LatticeGuard only to no testing or to manually written examples.  We instead use baselines that try to explain away the contribution.  Upstream-only evidence asks whether public examples already expose seeded drifts; cross-adapter evidence asks whether disagreement alone is enough; random mutation asks whether any valid-looking edit can serve as a metamorphic oracle; and single-relation ablations ask whether one law family covers the drift space.  These alternatives fail for different reasons, which is the point: access-control evaluator regressions can occur in combination algorithms, role closure, shadowing, priority handling, or normalization.
 
 \begin{table*}[t]
 \centering
-\caption{Baseline interpretation.  The baseline columns describe what a simpler explanation would claim instead of LatticeGuard and how the evidence refutes that claim.}
+\caption{Baseline interpretation.  Rows compare simpler explanations over the same frozen evidence surface.}
 \label{tab:baselineinterp}
 \begin{tabular}{p{0.20\linewidth}p{0.32\linewidth}p{0.35\linewidth}}
 \toprule
@@ -534,22 +548,20 @@ This accounting also blocks two common overfitting readings.  First, a large cle
 
 \section{Related Work}
 \label{sec:related}
-LatticeGuard draws first on metamorphic testing: Chen et al.'s original formulation \cite{chen1998metamorphic}, later surveys and domain studies \cite{segura2016survey,chen2016mtcybersecurity}, and recent logic-oriented uses \cite{mansur2023datalog}.  It also follows differential testing traditions from compilers and system implementations \cite{mckeeman1998differential,yang2011csmith,le2014emi,petsios2017nezha}.  Symbolic execution contributes the idea of making path conditions executable \cite{godefroid2008sage,cadar2008klee,sen2005cute}.  Differential generation further shows how generated cases can become stronger than anecdotal tests \cite{person2008differential,taneja2010diffgen}.  Test generation and mutation work supply the oracle-pressure background \cite{fraser2011evosuite,fraser2012mutation,nie2011survey}.  Classical symbolic and specification-based testing explain why the law predicates must be explicit \cite{clarke1976system,king1976symbolic,khurshid2003testera}.  LatticeGuard's boundary is that differential or generated evidence is admitted only after a law-specific applicability predicate and rejection rule establish what should be preserved.
+LatticeGuard draws first on metamorphic testing.  Chen et al. introduced testing through relations among executions \cite{chen1998metamorphic}; Segura et al. survey that oracle pattern \cite{segura2016survey}.  Cybersecurity metamorphic tests motivate the security setting \cite{chen2016mtcybersecurity}, and dependency-aware Datalog testing shows why logic engines need relation-specific witnesses \cite{mansur2023datalog}.  Differential testing supplies the comparison instinct: McKeeman formulates the compiler setting \cite{mckeeman1998differential}, Csmith stresses compiler optimizers \cite{yang2011csmith}, equivalence-modulo-input validation preserves selected semantics \cite{le2014emi}, and Nezha generalizes the differential surface \cite{petsios2017nezha}.  Symbolic execution makes path conditions executable in large systems \cite{godefroid2008sage}, KLEE-style unit tests \cite{cadar2008klee}, and CUTE-style path exploration \cite{sen2005cute}.  Differential generation \cite{person2008differential}, DiffGen \cite{taneja2010diffgen}, EvoSuite \cite{fraser2011evosuite}, mutation-driven oracle analysis \cite{fraser2012mutation}, combinatorial testing \cite{nie2011survey}, and classical symbolic/specification-based testing \cite{clarke1976system} \cite{king1976symbolic} \cite{khurshid2003testera} all inform LatticeGuard's rule: generated evidence is counted only after an explicit applicability predicate admits it.
 
-Access-control policy analysis supplies the semantic substrate.  RBAC and ABAC define the role and attribute models that make authorization laws meaningful \cite{ferraiolo1992rbac,sandhu1996rbac,nist800162,nist800192}.  XACML standards and verification work motivate request generation and policy coverage \cite{oasis2013xacml,fisler2005verification,martin2006coverage}.  Change-impact and policy-quality studies show why syntactic coverage is not enough \cite{martin2007changeimpact,martin2008quality}.  Multi-implementation and systematic policy-testing studies show how easy it is to confuse request breadth with semantic evidence \cite{li2008xacmlmultiple,bertolino2010systematic,bertolino2012xacmlrequests}.  LatticeGuard is narrower but deeper: it targets evaluator regression with relation-specific applicability guards, explicit rejected/unsupported accounting, executable reference semantics for backend agreement, bounded law-kernel checks, and minimized witnesses.
+Access-control policy analysis supplies the semantic substrate.  RBAC defines role hierarchies \cite{ferraiolo1992rbac} and the consolidated role model \cite{sandhu1996rbac}; NIST ABAC gives the attribute-policy view \cite{nist800162} and testing framework \cite{nist800192}.  XACML standardizes policy syntax \cite{oasis2013xacml}; verification work makes semantic policy properties explicit \cite{fisler2005verification}.  Coverage \cite{martin2006coverage}, policy-quality \cite{martin2008quality}, and change-impact studies \cite{martin2007changeimpact} explain why request breadth alone is weak evidence.  Multi-implementation XACML testing \cite{li2008xacmlmultiple}, systematic request generation \cite{bertolino2010systematic}, and automatic request generation \cite{bertolino2012xacmlrequests} broaden the surface, while LatticeGuard narrows the claim to evaluator regression rows whose applicability, support boundary, reference agreement, and replay witness are inspectable.
 
-Modern authorization systems raise the bar for novelty.  Cedar exposes a precise authorization semantics and extensive public material \cite{cedar_authz_docs,cedar_policy_examples_docs,cedar_entities_docs,cedar_schema_docs}.  Its request model, public implementation material, and ecosystem bindings make it a useful regression target \cite{cedar_request_docs,cedar_github,cedar_integration_tests,cedarpy_pypi}.  Recent Cedar verification and policy-repair work strengthen semantic assurance, but they address a different question from release-regression oracle construction \cite{cutler2024cedar,disselkoen2024cedarvgd,wu2026restricter}.  NGAC, Zelkova-style analysis, and ProfessorX show the value of richer authorization reasoning \cite{guttman2025ngac,backes2020stratified,backes2018zelkova,weintraub2025professorx}.  OPA exposes practical policy evaluation and testing idioms \cite{opa_language_docs,opa_policy_testing,opa_policy_reference,opa_cli_docs}.  Casbin exposes a complementary model/effect surface for evaluator regression \cite{casbin_model_docs,casbin_rbac_docs,casbin_abac_docs,casbin_effect_docs}.  Release notes give ecosystem context \cite{opa_backwards,opa_release1171,casbin_priority_docs}.  Implementation packages complete the operational view \cite{casbin_py_repo,pycasbin_pypi}.  Zanzibar-style systems, OpenFGA, and SpiceDB show why authorization regressions matter in service-scale deployments \cite{pang2019zanzibar,openfga_docs,spicedb_docs}.  LatticeGuard's novelty is not a new policy language or a generic harness; it is the law-to-obligation discipline replayed across evaluator fragments with explicit boundaries under reproducibility expectations for ICSE artifacts \cite{icse2027_research,ieee_format,muttakin2026openscience,ahmed2024icseartifacts}.
+Modern authorization systems already expose rich public semantics.  Cedar documents authorization \cite{cedar_authz_docs}, requests \cite{cedar_request_docs}, entities \cite{cedar_entities_docs}, schemas \cite{cedar_schema_docs}, examples \cite{cedar_policy_examples_docs}, repository material \cite{cedar_github}, integration tests \cite{cedar_integration_tests}, and Python bindings \cite{cedarpy_pypi}.  Cedar verification \cite{cutler2024cedar}, repair \cite{disselkoen2024cedarvgd}, and policy tightening \cite{wu2026restricter} pursue semantic assurance; LatticeGuard asks how a release-regression oracle should count a transformed row.  NGAC \cite{guttman2025ngac}, Zelkova-style analysis \cite{backes2020stratified} \cite{backes2018zelkova}, and ProfessorX \cite{weintraub2025professorx} reinforce the value of explicit authorization models.  OPA contributes language, test, reference, CLI, backward-compatibility, and release surfaces \cite{opa_language_docs} \cite{opa_policy_testing} \cite{opa_policy_reference} \cite{opa_cli_docs} \cite{opa_backwards} \cite{opa_release1171}; Casbin contributes model, RBAC, ABAC, priority, effect, repository, and package surfaces \cite{casbin_model_docs} \cite{casbin_rbac_docs} \cite{casbin_abac_docs} \cite{casbin_priority_docs} \cite{casbin_effect_docs} \cite{casbin_py_repo} \cite{pycasbin_pypi}.  Zanzibar \cite{pang2019zanzibar}, OpenFGA \cite{openfga_docs}, and SpiceDB \cite{spicedb_docs} show service-scale stakes.  LatticeGuard's novelty is the law-to-obligation discipline, packaged under ICSE-style reproducibility and artifact expectations \cite{icse2027_research} \cite{ieee_format} \cite{muttakin2026openscience} \cite{ahmed2024icseartifacts}.
 
 \section{Conclusion}
 \label{sec:threats}
-The main internal validity threat is a weak law predicate; LatticeGuard mitigates it with executable witnesses, reference-soundness checks, negative candidates, bounded model checking, holdout/denominator-pressure checks, and seeded controls that exercise the failure path without being reported as real vulnerabilities.  The main external boundary is fragment coverage: counted rows cover Casbin/Cedar native fragments and an OPA/Rego normalized-decision fragment over documentation-derived, upstream-example, native, stress-witness, and generated subjects.  OPA hierarchy rows remain a normalized-closure result, not a native recursive-closure claim.
+The main internal validity threat is a weak law predicate; LatticeGuard mitigates it with executable witnesses, reference-soundness checks, negative candidates, bounded model checking, denominator-pressure checks, and seeded controls that exercise the failure path without being reported as real vulnerabilities.  The main external boundary is fragment coverage: counted rows cover Casbin/Cedar native fragments and an OPA/Rego normalized-decision fragment over documented, upstream, native, stress, and generated subjects.  OPA hierarchy rows remain a normalized-closure result, not a native recursive-closure claim.
 
-LatticeGuard turns access-control laws into executable, applicability-checked metamorphic obligations.  A row is counted only when its law-specific predicate admits it, its invariant is checked against a declared backend fragment, and any failure can be minimized into a replayable counterexample.  The broader contribution is the evidence boundary: a maintainer can tell whether a future law, backend, or policy-language extension has strengthened the regression evidence chain or only enlarged the table.
-
-For adopters, that boundary changes how regression evidence is reviewed.  A clean run is not a certificate that an authorization language is bug-free; it is a compact audit trail showing which semantic relations were exercised, which candidate rewrites were rejected, which fragments remained unsupported, and whether the counterexample path still works.  LatticeGuard therefore offers a conservative practice for future evaluator releases: compare them against law-named obligations, unsupported boundaries, and minimized witnesses rather than against a collection of hand-inspected examples.
+LatticeGuard turns access-control laws into executable, applicability-checked metamorphic obligations.  A row is counted only when its law-specific predicate admits it, its invariant is checked against a declared backend fragment, and any failure can be minimized into a replayable counterexample.  For adopters, the result is a conservative release practice: compare evaluator changes against law-named obligations, unsupported boundaries, and minimized witnesses, not against a pooled collection of hand-inspected examples.
 
 \section{Data Availability}
-The anonymous review artifact is provided through the submission system.  It contains source code, frozen subject data for policy and evaluator cases, replay evidence, generated result tables, an open-source license under MIT terms, dependency notices and metadata, and checksums needed to reproduce the reported artifact checks.  It excludes credentials, private data, private infrastructure, and author-identifying repository metadata.  Reviewers can rerun checks or inspect frozen evidence without private services.  The archival package will preserve the same anonymous evidence surface through Zenodo after acceptance; the version-control mirror is for navigation rather than long-term archival storage.
+The anonymous review artifact is attached as supplementary material to this ICSE submission with source code, frozen subjects, replay evidence, result tables, open-source license text, dependency metadata, and checksums.  It excludes credentials, private data, private infrastructure, and identifying hosting metadata.  Reviewers can reproduce checks offline.  A DOI-backed Zenodo archive is prepared for long-term preservation; the version-control mirror is only for navigation.  The archive mirrors the review evidence rather than a later rerun, so accepted links will preserve the reported counts and checksums.  The submission record carries the anonymous mirror and archive metadata.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
